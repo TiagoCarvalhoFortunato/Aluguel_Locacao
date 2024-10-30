@@ -2,7 +2,7 @@
 
 body{
     font-family: "Roboto", system-ui;
-    background: linear-gradient(to right, rgba(3, 8, 64, 0.887), rgb(0, 16, 190, 0.887));
+    background: linear-gradient(to right, rgba(3, 8, 64, 0.887), rgba(6, 9, 37, 0.887));
     color: white;
 }
 
@@ -10,14 +10,14 @@ h1, h2 {
     
     background-color:rgb(255, 255, 255);
     border-radius: 10px;
-    color: rgb(135, 36, 228);
+    color: rgb(78, 72, 85);
     box-shadow: 4px 4px 8px black;
 }
 
 .formulario {
     margin-top: 20px;
     font-size: large;
-    background-color: rgba(137, 43, 226, 0.681);
+    background-color: rgba(39, 32, 45, 0.681);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 4px 4px 8px black;

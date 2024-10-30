@@ -27,7 +27,7 @@
                 </header>
                 <main class="formulario">
                     <?php
-
+                    
                     //Definição das classes abstratas
 
                     abstract class VeiculoAbstrata
@@ -266,14 +266,17 @@
                     $nome_car = $_GET["nome_car"];
                     $marca_car = $_GET["marca_car"];
                     $modelo_car = $_GET["modelo_car"];
+                    $ano = $_GET["ano"];
+                    $km = $_GET["inKm"];
 
                     //Programa principal - exemplos
-                    $dadosVeiculo = array("$nome_car", "$marca_car", "modelo_car", "2009", "preto", "35000");
+                    $dadosVeiculo = array("Carro: $nome_car", "Marca: $marca_car", "Modelo: $modelo_car", "Ano: 2009", "Cor: preto", "km Rodado: $km");
                     $objVeiculo = new Veiculo;
                     $objVeiculo->Veiculo_Cadastro("1", $dadosVeiculo);
                     echo "<hr>";
                     $objVeiculo->Veiculo_Exclusao("1");
                     echo "<hr>";
+
                     $dadosCliente = array("Nome: $nome", "Endereço: Rua Valdemar Martins 233", "E-mail: $email", "Celular: $celular", "CPF: $cpf", "Data de Nascimento: $data_nascimento");
                     $objCliente = new PessoaFisica;
                     $objCliente->Cadastro("1", $dadosCliente);
@@ -282,6 +285,7 @@
                     $objCliente = new PessoaJuridica;
                     $objCliente->Cadastro("1", $dadosCliente);
                     echo "<hr>";
+
                     $dadosAluguel = array("1", "04/10/2024", "2 dias", "90,00");
                     $objCliente->Cliente_Aluga_Veiculo("1", $dadosAluguel);
                     echo "<hr>";
